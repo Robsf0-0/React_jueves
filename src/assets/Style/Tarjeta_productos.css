@@ -1,0 +1,62 @@
+.TPRC {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border: 5px solid #ccc;
+    border-radius: 12px;
+    padding: 12px;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    
+    
+    /* Indicador de cursor e interacciones visuales */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efectos interactivos al pasar el ratón (hover) */
+.TPRC:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-color: #E67E22;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto al hacer clic en el producto */
+.TPRC:active {
+    transform: translateY(-1px) scale(0.99);
+}
+
+.Orde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px; 
+    /* Controla el espacio exacto entre el título y la descripción */
+}
+
+/* Quita los márgenes superiores e inferiores por defecto del título */
+.Orde h1 {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Quita los márgenes superiores e inferiores por defecto de la descripción */
+.Orde p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 100; 
+}
+
+/* Centrado dentro de la tarjeta */
+.centrarC {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

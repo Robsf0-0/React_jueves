@@ -1,0 +1,38 @@
+.Centrar{
+    text-align: center;
+    width: 60%;
+    min-height: 500px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;    
+}
+.Orde{
+    flex-direction: column;
+}
+/*centrar las tarjetas*/
+.centrarC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+    
+/* organiza y estiliza el contenido de la página*/
+body {
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f 0%, #2c2c2c 100%);
+    padding: 40px 20px;
+    overflow-x: hidden;
+}
