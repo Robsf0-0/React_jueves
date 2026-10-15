@@ -1,0 +1,56 @@
+/* Contenedor que simula la ventana de la vitrina */
+.conte {
+    width: 90%;
+    max-width: 2000px;
+    margin: 20px auto;
+    overflow: hidden;   /* esto es lo que hace que las fotos "choquen" con el borde y desaparezcan */
+    position: relative;
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* El riel que contiene las fotos y se desplaza */
+.vitrina {
+    display: flex !important; /* El !important evita que librerías externas lo rompan */
+    flex-direction: row; 
+    width: max-content;  
+    animation: girarVitrina 25s linear infinite;  
+}
+
+/* Detiene el movimiento cuando el cliente pone el cursor encima */
+.conte:hover .vitrina {
+    animation-play-state: paused;
+}
+
+/* Cada foto de pastel */
+.item {
+    width: 300px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+/* Efecto visual opcional al pasar el mouse por una foto individual */
+.item img:hover {
+    transform: scale(1.03);
+}
+
+/* Animación matemática: se mueve exactamente el 50% (el ancho de las imágenes originales) */
+@keyframes girarVitrina {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

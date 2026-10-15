@@ -4,11 +4,11 @@
     align-items: center;
     width: 80%;
     height: auto;
-    border: 5px solid #ccc;
+    border-bottom: 2px solid rgb(82, 82, 82); /* Grosor, tipo de línea y color */
     border-radius: 12px;
     padding: 12px;
     gap: 10px;
-    background-color: #ffffff;
+    background-color: #dcdcdc;
     border-radius: 12px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -60,3 +60,28 @@
     display: flex;
     justify-content: center;
 }
+
+
+#tarjeta-inicio {
+    text-align: center;
+    padding: 40px;
+    background-color: #b9b9b988;
+    
+}
+
+#tarjeta-inicio img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#tarjeta-inicio .Orde h1 { 
+    font-size: 32px; 
+}
+#tarjeta-inicio .Orde p  { 
+    font-size: 18px; 
+}
+
+
+

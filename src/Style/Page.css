@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    background: linear-gradient(135deg, #353434 0%, #d38705 100%);
+    padding: 40px 20px;
+    overflow-x: hidden;
+
+    background-color: #d7ccc8;     /* Color arena / café claro de fondo */
+    display: flex;
+    
+}
+
+.CentrarP{
+    text-align: center;
+    width: calc(100vw - 300px);
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;  
+
+    min-height: calc(100vh - 30px); /* Ocupa todo el alto disponible restando el padding */
+    height: auto; 
+    
+    
+
+    background-color: #dcdcdc;     /* Fondo blanco para tu cuadro */
+                    /* Espacio libre por dentro */
+    box-shadow: 0 10px 25px rgb(255, 208, 0); /* Sombra suave para darle volumen */
+    box-sizing: border-box; 
+    flex-direction: column;        /* Organiza el contenido de arriba a abajo */
+  justify-content: center; 
+    
+      
+}
+.CentrarPP{
+    text-align: center;
+    width: calc(100vw - 1000px);
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600; 
+    
+
+    background-color: #dcdcdc;     /* Fondo blanco para tu cuadro */
+    box-shadow: 0 10px 25px rgb(255, 208, 0); /* Sombra suave para darle volumen */
+    box-sizing: border-box; 
+    flex-direction: column;        /* Organiza el contenido de arriba a abajo */
+    justify-content: center; 
+    
+      
+}
+.Separador{
+    width: 100%;
+    border-color: #dcdcdc;
+}
+.Inicioo ul{
+    justify-content: center;
+    display: flex;
+    list-style: none;            
+    padding: 20px;
+    margin: 20px;
+}
+.Inicioo li {
+    margin-left: 5px;           /* Separa las opciones entre sí */
+  }
+
+.Inicioo a {
+    text-decoration: none;       /* Quita el subrayado de los enlaces */
+    color: #333;                 /* Color del texto */
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #f0f0f0;   /* Color gris claro de fondo */
+    color: #333;                 /* Color del texto */
+    padding: 10px 50px;          /* Espacio interno (10px arriba/abajo, 20px lados) */
+    border: 5px solid #fcba04;      /* Borde sutil de la cajita */
+    border-radius: 10px;          /* Bordes redondeados */
+    transition: all 0.3s ease; 
+    
+  }
+
+.Inicioo a:hover {
+    color: #007BFF;             /* Color al pasar el cursor */
+  }
+
+.Orde{
+    flex-direction: column;
+}
+/*centrar las tarjetas*/
+.centrarC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+    
+/* organiza y estiliza el contenido de la página*/

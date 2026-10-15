@@ -1,14 +1,16 @@
+import Imagen from '../Componentes/Imagen'
 import '../Style/Tarjeta.css'
-import Titulo from '../Componentes/Titulo'
 import Descripcion from '../Componentes/Descripcion'
-export default function Tarjeta({title,descripcion,color,children}){
+export default function Tarjeta({img, width, height, descripcion,color,children}){
     return(
         <div className='centrarC'>
             <div className='Centrar' style={{background:color}}>
+                
                 <div className='Orde'>
-                    <Titulo
-                        title={title}
+                    <Imagen
+                        img={img}  width={width} height={height}
                     />
+                    
                     <Descripcion
                         descripcion={descripcion}
                     />    

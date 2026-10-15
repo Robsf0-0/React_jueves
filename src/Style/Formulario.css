@@ -1,0 +1,52 @@
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f4f4f4;
+    border: 3px solid rgb(248, 143, 6);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.formulario .Intp {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.formulario button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario button[type="submit"] {
+    background: green;
+    color: white;
+}
+
+.formulario button[type="reset"] {
+    background: orange;
+    color: white;
+}
+
+.formulario button[type="button"] {
+    background: gray;
+    color: white;
+}
