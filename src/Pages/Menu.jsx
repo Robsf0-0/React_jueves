@@ -1,5 +1,5 @@
 import '../Style/Page.css'
-import Cab from '../Orquestador/Head'
+import Head from '../Orquestador/Head'
 import Tarjeta from '../Orquestador/Tarjeta'
 import TarjetaP from '../Orquestador/Tarjeta_productos'
 import Cafe from '../data.json'
@@ -7,11 +7,10 @@ import Cafe from '../data.json'
 export default function Menu(){
     return(
     
-    <div>
+    <div className="CentrarP">
 
-<div>
-  <Cab/>
-</div>
+
+  <Head/>
 
 
 

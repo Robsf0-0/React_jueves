@@ -13,7 +13,7 @@ export default function App(){
                 <Route path="/Contacto" element={<Tar/>} />
                 <Route path="/Domicilio" element={<Dom/>} />
                 <Route path="/Menu" element={<Menu/>} />
-                <Route path="/Reserva" element={<Res/>} />
+                <Route path="/Reseñas" element={<Res/>} />
             </Routes>
         </BrowserRouter>
 

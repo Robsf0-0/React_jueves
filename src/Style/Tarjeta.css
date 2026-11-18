@@ -1,6 +1,6 @@
 .Centrar{
     text-align: center;
-    width: calc(100vw - 1000px);
+    width: min(100%, 900px);
     min-height: calc(100vh - 30px); /* Ocupa todo el alto disponible restando el padding */
     height: auto; 
     padding-bottom: 40px;

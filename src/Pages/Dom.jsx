@@ -3,7 +3,7 @@ import '../Style/Tarjeta.css'
 import '../Style/Formulario.css'
 import Intp from '../Componentes/Formulario/Intp'
 import Boton from '../Componentes/Formulario/Boton'
-import Cab from '../Orquestador/Head'
+import Head from '../Orquestador/Head'
 
 const Entradas=[
     {nombre:"Titulo",Tipo:"text",holder:"Nombre Completo"},
@@ -16,10 +16,9 @@ const Entradas=[
 
 export default function Dom(){
     return(
-        <div>
-        <div>
-          <Cab/>
-        </div>
+        <div className="CentrarP">
+          <Head/>
+        
         
         
             

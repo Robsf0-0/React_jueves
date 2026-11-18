@@ -13,7 +13,7 @@ export default function Head(){
                         <li><Link to="/">Inicio</Link></li>                
                         <li><Link to="/Menu">Menu</Link></li>                
                         <li><Link to="/Contacto">Contacto</Link></li>
-                        <li><Link to="/Reserva">Reservacion</Link></li>
+                        <li><Link to="/Reseñas">Reseñas</Link></li>
                         <li> <Link to="/Domicilio">Domicilio</Link></li>
                         </ul>
                     </nav>
