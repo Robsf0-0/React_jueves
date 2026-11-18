@@ -1,5 +1,9 @@
-export default function Boton({ tipo, texto }) {
+export default function Boton({tipo,nombre,onClick}) {
     return (
-        <button type={tipo}>{texto}</button>
+        <div>
+            <button type={tipo} onClick={onClick}>
+                {nombre}
+            </button>
+        </div>
     )
 }

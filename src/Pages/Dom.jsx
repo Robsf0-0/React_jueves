@@ -15,6 +15,10 @@ const Entradas=[
 
 
 export default function Dom(){
+    const Botones=[
+    {tipo:"submit", nombre:"Enviar"},
+    {tipo:"button", nombre:"Volver"},
+    {tipo:"reset", nombre:"Reset"}]
     return(
         <div className="CentrarP">
           <Head/>
@@ -33,8 +37,14 @@ export default function Dom(){
                 holder={intp.holder}
                 />
                 ))}
-                <Boton tipo="submit" texto="Enviar" />
-                <Boton tipo="reset" texto="Limpiar" />
+                {Botones.map((boton)=>(
+                    <Boton 
+                        key={boton.nombre}
+                        tipo={boton.tipo}
+                        nombre={boton.nombre} 
+                        onClick={boton.onClick}
+                    />
+                ))}
             
             </form>
             <br />

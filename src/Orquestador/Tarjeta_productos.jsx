@@ -2,11 +2,12 @@ import '../Style/Tarjeta_productos.css'
 import Titulo from '../Componentes/Titulo'
 import Imagen from '../Componentes/Imagen'
 import Descripcion from '../Componentes/Descripcion'
-export default function TP({id, Name,Price,img}){
+
+export default function TP({id, Name, Price, img, children}){
     return(
         <div className='TPRC' id={id}>
                 <Imagen
-                    img={img} widgh="130" height="90"               
+                    img={img} widgh="130" height="90"
                     />
                 <div className='Orde'>
                     <Titulo
@@ -14,7 +15,8 @@ export default function TP({id, Name,Price,img}){
                     />
                     <Descripcion
                         descripcion={Price}
-                    />    
+                    />
+                    {children}
                 </div>
         </div>
     )
