@@ -13,7 +13,7 @@ export default function useFormulario({agregar}){
 
     const enviar = (e) => {
         e.preventDefault()
-        if (!datos.Titulo || !datos.Imagen || !datos.Descripcion || !datos.Estrellas) {
+        if (!datos.Titulo || !datos.Imagen || !datos.Descripcion || !datos.Estrellas || datos.Estrellas <= 0) {
             alert("Completa todos los campos");
             return;
         }

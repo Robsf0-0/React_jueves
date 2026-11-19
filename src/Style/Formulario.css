@@ -1,15 +1,14 @@
-
 .formulario {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 400px;
+    width: 100%;          /* antes: 400px fijo */
+    max-width: 400px;     /* en pantallas grandes no pasa de 400px */
     margin: 40px auto;
-    padding: 30px;
+    padding: clamp(16px, 5vw, 40px);  /* antes: 40px fijo (estaba repetido con 30px) */
     background: #f4f4f4;
     border: 3px solid rgb(248, 143, 6);
     border-radius: 12px;
-    padding: 40px;
 }
 
 .formulario .Intp {
@@ -23,10 +22,11 @@
 }
 
 .formulario input {
+    width: 100%;
+    min-width: 0;
     padding: 8px;
     border: 1px solid #999;
     border-radius: 6px;
-    padding: 5px;
 }
 
 .formulario button {
@@ -49,4 +49,16 @@
 .formulario button[type="button"] {
     background: gray;
     color: white;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .formulario {
+        margin: 20px auto;
+        gap: 12px;
+    }
+
+    .formulario button {
+        width: 100%;   /* botones del ancho completo, más fáciles de tocar */
+    }
 }
