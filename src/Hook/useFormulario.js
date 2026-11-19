@@ -13,6 +13,10 @@ export default function useFormulario({agregar}){
 
     const enviar = (e) => {
         e.preventDefault()
+        if (!datos.Titulo || !datos.Imagen || !datos.Descripcion || !datos.Estrellas) {
+            alert("Completa todos los campos");
+            return;
+        }
         agregar({
             id: Date.now(),
             title: datos.Titulo,

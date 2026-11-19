@@ -16,8 +16,7 @@ const Entradas=[
 
 export default function Dom(){
     const Botones=[
-    {tipo:"submit", nombre:"Enviar"},
-    {tipo:"button", nombre:"Volver"},
+    {tipo:"button", nombre:"Enviar"},
     {tipo:"reset", nombre:"Reset"}]
     return(
         <div className="CentrarP">
@@ -39,10 +38,9 @@ export default function Dom(){
                 ))}
                 {Botones.map((boton)=>(
                     <Boton 
-                        key={boton.nombre}
+                       
                         tipo={boton.tipo}
                         nombre={boton.nombre} 
-                        onClick={boton.onClick}
                     />
                 ))}
             
